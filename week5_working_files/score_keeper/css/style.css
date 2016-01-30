@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  margin: 3em;
+  padding: 0;
+}
+
+button {
+  font-size: 20px;
+  font-family: helvetica, sans-serif;
+  padding: 10px 30px;
+  color: #000000;
+  background-color: #cccccc;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+#result {
+  font-size: 40px;
+  font-family: helvetica, sans-serif;
+  color: red;
+}

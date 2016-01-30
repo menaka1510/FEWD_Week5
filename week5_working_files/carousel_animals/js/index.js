@@ -1,11 +1,11 @@
 var images=["images/animal2.jpg","images/animal3.jpg","images/animal4.jpg","images/animal5.jpg","images/animal6.jpg","images/animal7.jpg",];
-var i=0;
-var votes=[];
+var i=0;//increment element
+var votes=[]; //storing the votes
 function previousImage(){
 	i>0 ? changeImage(--i):0;
 }
 function nextImage(){
-	i+1<images.length ? changeImage(++i):calculateVotes();
+	i+1<images.length ? changeImage(i++):calculateVotes(); //? is a ternary operator -> if i is > than 0 then do this :(OR) do that
 }
 function changeImage(){
 	$("#image-to-vote-on").attr("src",images[i]);
